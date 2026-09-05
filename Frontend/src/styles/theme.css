@@ -1,0 +1,34 @@
+:root {
+  /* Color: cool paper background, near-black ink text, amber accent
+     borrowed from a video scrubber's playhead — used sparingly for the
+     one interactive idea in this app (jumping to a moment in the video). */
+  --paper: #f0f1f3;
+  --surface: #ffffff;
+  --surface-sunken: #f6f7f9;
+
+  --ink: #14171f;
+  --ink-soft: #5b6472;
+  --ink-faint: #8b93a1;
+
+  --line: rgba(20, 23, 31, 0.1);
+  --line-strong: rgba(20, 23, 31, 0.18);
+
+  --accent: #b9791f;
+  --accent-strong: #8f5c14;
+  --accent-tint: #fbf0dc;
+
+  --user-bubble: #14171f;
+  --user-bubble-ink: #f6f7f9;
+
+  --danger: #a3312b;
+  --danger-tint: #fbeceb;
+  --success: #2f6f4f;
+  --success-tint: #ecf5ef;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Mono', Consolas, monospace;
+}

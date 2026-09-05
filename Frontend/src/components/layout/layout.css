@@ -1,0 +1,100 @@
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-header {
+  flex-shrink: 0;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.app-header .brand {
+  font-weight: 700;
+  font-size: 1rem;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.app-header .brand .dot {
+  color: var(--accent);
+}
+
+.app-header .header-input {
+  flex: 1;
+  max-width: 640px;
+}
+
+.app-body {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+}
+
+.app-rail {
+  width: 400px;
+  flex-shrink: 0;
+  border-right: 1px solid var(--line);
+  background: var(--surface);
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.app-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-empty-state {
+  margin: auto;
+  text-align: center;
+  max-width: 420px;
+  padding: 32px;
+  color: var(--ink-soft);
+}
+
+.app-empty-state h1 {
+  font-size: 1.3rem;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.app-empty-state p {
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 860px) {
+  .app-header {
+    flex-wrap: wrap;
+  }
+  .app-header .header-input {
+    order: 3;
+    flex-basis: 100%;
+  }
+  .app-body {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .app-rail {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+    max-height: 60vh;
+  }
+  .app-main {
+    min-height: 480px;
+  }
+}
